@@ -8,6 +8,7 @@
   "main": "index.js",
   "license": "MPL-2.0",
   "scripts": {
-    "test": "node --test"
+    "test": "node --test",
+    "doc": "jsdoc -c conf.json"
   }
 }
