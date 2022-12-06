@@ -1,0 +1,24 @@
+{
+  "plugins": ["plugins/markdown"],
+  "recurseDepth": 10,
+  "source": {
+    "include": ["index.js","lib"],
+    "includePattern": "\\.js$"
+  },
+  "opts": {
+    "recurse": true,
+    "package": "./package.json",
+    "readme": "./README.md",
+    "destination": "./docs/",
+    "verbose": true
+  },
+  "sourceType": "module",
+  "tags": {
+    "allowUnknownTags": true,
+    "dictionaries": ["jsdoc","closure"]
+  },
+  "templates": {
+    "cleverLinks": false,
+    "monospaceLinks": false
+  }
+}
