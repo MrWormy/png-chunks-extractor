@@ -9,6 +9,6 @@
   "license": "MPL-2.0",
   "scripts": {
     "test": "node --test",
-    "doc": "jsdoc -c conf.json"
+    "doc": "jsdoc -c jsdoc-conf.json"
   }
 }

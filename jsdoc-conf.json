@@ -9,8 +9,7 @@
     "recurse": true,
     "package": "./package.json",
     "readme": "./README.md",
-    "destination": "./docs/",
-    "verbose": true
+    "destination": "./docs/"
   },
   "sourceType": "module",
   "tags": {
