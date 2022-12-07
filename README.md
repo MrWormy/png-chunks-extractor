@@ -23,4 +23,4 @@ const {chunks, chunksByType} = await chunksParser('path/to/file');
 
 Parses `PNGFile` and returns its chunks 
 
-[Extended doc](./png-chunks-extractor)
+[Extended documentation](https://www.vhector.com/png-chunks-extractor/)
