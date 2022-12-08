@@ -13,7 +13,7 @@ const {chunks, chunksByType} = await chunksParser('path/to/file');
 - `options` [\<Object>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
   - `validateStruct` [\<boolean>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Boolean_type) Enables [PNG structure validation](http://www.libpng.org/pub/png/spec/iso/index-object.html#5PNG-file-signature). **Default**: `false`
   - `validateCrc` [\<boolean>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Boolean_type) Enables [Chunks CRC validation](http://www.libpng.org/pub/png/spec/iso/index-object.html#5CRC-algorithm). **Default**: `false`
-  - `exitOnError` [\<boolean>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Boolean_type) Exits whenever there is a validation error. **Default**: `false`
+  - `throwOnError` [\<boolean>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Boolean_type) Throws an error whenever there is a validation error. **Default**: `false`
   - `logOnError` [\<boolean>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Boolean_type) Logs any validation error. **Default**: `true`
 - Returns [\<Object>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
   - `chunks` [\<Object\[\]>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) An array of the [PNG chunks](http://www.libpng.org/pub/png/spec/iso/index-object.html#4Concepts.FormatChunks).
