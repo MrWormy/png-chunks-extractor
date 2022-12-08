@@ -1,13 +1,10 @@
 name: Deploy Docs
 run-name: Deploy docs to Pages
 on:
-  push:
-    branches:
-      - 'master'
   workflow_run:
-    workflows: [Run Tests]
-    type:
-      - completed
+    workflows: ["Run Tests"]
+    type: [completed]
+    branches: [master]
 jobs:
   create-docs-artefacts:
     runs-on: ubuntu-latest
@@ -37,10 +34,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
-
-  tests-failure:
-    runs-on: ubuntu-latest
-    if: ${{ github.event.workflow_run.conclusion == 'failure' }}
-    steps:
-      - run: echo 'Tests must pass for doc to be generated'
-      - run: exit 1
