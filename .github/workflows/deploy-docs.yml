@@ -3,7 +3,8 @@ run-name: Deploy docs to Pages
 on:
   workflow_run:
     workflows: ["Run Tests"]
-    type: [completed]
+    type:
+      - completed
     branches: [master]
 jobs:
   create-docs-artefacts:
@@ -14,6 +15,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: '18'
+      - run: echo $GITHUB_EVENT
       - run: npm install -g jsdoc
       - run: npm run doc
       - run: npm run env | grep -E 'npm_package_(name|version)' >> $GITHUB_ENV
