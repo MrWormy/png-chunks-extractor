@@ -1,12 +1,25 @@
 {
   "name": "png-chunks-extractor",
+  "description": "Basic PNG chunks extractor",
   "version": "1.0.0",
+  "author": "MrWormy <mrwormy.dev@protonmail.com>",
+  "license": "MPL-2.0",
+  "repository": "https://github.com/MrWormy/png-chunks-extractor",
+  "keywords": [
+    "PNG",
+    "Chunks",
+    "CRC"
+  ],
   "engines": {
     "node": ">=16"
   },
+  "files": [
+    "LICENSE",
+    "README.md",
+    "index.js",
+    "lib/"
+  ],
   "type": "module",
-  "main": "index.js",
-  "license": "MPL-2.0",
   "scripts": {
     "test": "node --test test/",
     "doc": "jsdoc -c jsdoc-conf.json"

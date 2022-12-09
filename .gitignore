@@ -1,2 +1,8 @@
+# IDE
 .idea
+
+# jsdocs
 docs
+
+# npm
+*.gz
