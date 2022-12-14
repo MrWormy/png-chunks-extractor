@@ -1,14 +1,16 @@
 {
   "name": "png-chunks-extractor",
   "description": "Basic PNG chunks extractor",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "author": "MrWormy <mrwormy.dev@protonmail.com>",
   "license": "MPL-2.0",
-  "repository": "https://github.com/MrWormy/png-chunks-extractor",
-  "homepage": "https://www.vhector.com/png-chunks-extractor/",
+  "repository": "github:MrWormy/png-chunks-extractor",
+  "homepage": "https://github.com/MrWormy/png-chunks-extractor#readme",
+  "bugs": "https://github.com/MrWormy/png-chunks-extractor/issues",
   "keywords": [
     "PNG",
     "Chunks",
+    "Parser",
     "CRC"
   ],
   "engines": {

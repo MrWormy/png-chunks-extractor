@@ -11,7 +11,8 @@ describe('PNG parsing', () => {
     });
     it('should parse correctly', async () => {
         const chunks = await pngChunksExtractor(new URL('test.png', import.meta.url));
-        const captions = Object.fromEntries(chunks.chunksByType[1950701684].map(({chunkBuf}) => chunkBuf.toString().split('\x00')));
+        console.log(chunks.chunks[0])
+        const captions = Object.fromEntries(chunks.chunksByType[1950701684].map(({dataBuf}) => dataBuf.toString().split('\x00')));
         deepStrictEqual(captions, {
             prompt: "painting of a male elf in a forest, perfect light, high contrast, beautiful day",
             nprompt: "rain, text",
