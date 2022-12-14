@@ -1,7 +1,7 @@
 {
   "name": "png-chunks-extractor",
   "description": "Basic PNG chunks extractor",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "MrWormy <mrwormy.dev@protonmail.com>",
   "license": "MPL-2.0",
   "repository": "https://github.com/MrWormy/png-chunks-extractor",
