@@ -1,14 +1,15 @@
-# Basic PNG chunks parser
+# Basic PNG chunks extractor
+[![NPM Version](https://badgen.net/npm/v/png-chunks-extractor)](https://npmjs.org/package/png-chunks-extractor)
 ```shell
-npm i -s png-chunks-parser
+npm i -s png-chunks-extractor
 ```
 
 ```javascript
-import chunksParser from 'png-chunks-extractor';
+import chunksExtractor from 'png-chunks-extractor';
 
-const {chunks, chunksByType} = await chunksParser('path/to/file');
+const {chunks, chunksByType} = await chunksExtractor('path/to/file');
 ```
-## chunksParser(PNGFile[, options])
+## chunksExtractor(PNGFile[, options])
 - `PNGFile` [\<string>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type) | [\<FileHandle>](https://nodejs.org/dist/latest-v18.x/docs/api/fs.html#class-filehandle) The file to parse.
 - `options` [\<Object>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
   - `validateStruct` [\<boolean>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Boolean_type) Enables [PNG structure validation](http://www.libpng.org/pub/png/spec/iso/index-object.html#5PNG-file-signature). **Default**: `true`
