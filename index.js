@@ -1,4 +1,4 @@
-import pce from 'lib/png-chunks-extractor.js';
+import pce from './lib/png-chunks-extractor.js';
 
 /**
  * Library entry point
