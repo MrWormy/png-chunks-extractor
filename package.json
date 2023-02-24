@@ -30,7 +30,8 @@
   },
   "type": "module",
   "scripts": {
-    "test": "node --test test/",
+    "test": "node --test-reporter=spec --test test/",
+    "coverage": "node --experimental-test-coverage test/test-png-chunks-extractor.js",
     "doc": "jsdoc -c jsdoc-conf.json"
   }
 }
